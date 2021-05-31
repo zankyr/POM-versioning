@@ -1,8 +1,8 @@
 # POM-versioning
-A Bash script updating the version of a Maven project
+A Bash script updating the version of a Maven project accordingly the [git-flow](https://nvie.com/posts/a-successful-git-branching-model/) branching model.
 
 ## Description
-This script accepts semantic versioning syntax as `MAJOR.MINOR.FIX[.HOTFIX][-SNAPSHOT]`. Acceptable examples are:
+This script accepts [semantic versioning](https://semver.org/) syntax as `MAJOR.MINOR.FIX[.HOTFIX][-SNAPSHOT]`. Acceptable examples are:
 - `1.0.0`
 - `1.0.0-SNAPSHOT`
 - `1.2.3.4`
@@ -28,3 +28,7 @@ Simply run the script:
 $ ./update-pom.sh
 
 ```
+
+## Useful links
+- git-flow branching model: https://nvie.com/posts/a-successful-git-branching-model/
+- semantic versioning: https://semver.org/
