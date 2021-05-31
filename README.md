@@ -2,11 +2,11 @@
 A Bash script updating the version of a Maven project
 
 ## Description
-This script accepts semantic versioning syntax as MAJOR.MINOR.FIX[.HOTFIX][-SNAPSHOT]. Acceptable examples are:
-- 1.0.0
-- 1.0.0-SNAPSHOT
-- 1.2.3.4
-- 1.2.3.4-SNAPSHOT
+This script accepts semantic versioning syntax as `MAJOR.MINOR.FIX[.HOTFIX][-SNAPSHOT]`. Acceptable examples are:
+- `1.0.0`
+- `1.0.0-SNAPSHOT`
+- `1.2.3.4`
+- `1.2.3.4-SNAPSHOT`
 
 To calculate next version, the script asks what are the changes introduced. For example, given a current
 version as `1.0.0.1-SNAPSHOT`:
