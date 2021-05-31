@@ -20,7 +20,7 @@ Last check is if this version is under development (snapshot) or not. If yes, th
 to the calculated version.
 
 ## Configuration
-Update the POM path accordingly to your project.
+Update the `POM_PATH` variable specifiyng your project POM path.
 
 ## Usage
 Simply run the script:

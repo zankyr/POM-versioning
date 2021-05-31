@@ -23,10 +23,10 @@
 # Last check is if this version is under development (snapshot) or not. If yes, the "-SNAPSHOT" suffix is added
 # to the calculated version.
 
-
+POM_PATH="../pom.xml"
 SNAPSHOT_VERSION="-SNAPSHOT"
 
-CURRENT_VERSION_WITH_SNAPSHOT=$(mvn -f ./pom.xml help:evaluate -Dexpression=project.version -q -DforceStdout)
+CURRENT_VERSION_WITH_SNAPSHOT=$(mvn -f ${POM_PATH} help:evaluate -Dexpression=project.version -q -DforceStdout)
 CURRENT_VERSION=$CURRENT_VERSION_WITH_SNAPSHOT
 
 if [[ $CURRENT_VERSION =~ $SNAPSHOT_VERSION ]]; then
@@ -94,7 +94,7 @@ fi
 
  if [ "${confirmation}" == "Y" ] || [ "${confirmation}" == "y" ]
  then
- 	mvn -f ../pom.xml versions:set -DnewVersion=$new_version -DgenerateBackupPoms=false
+ 	mvn -f ${POM_PATH} versions:set -DnewVersion=$new_version -DgenerateBackupPoms=false
  else
  	echo "No action will be performed. Exit"
  fi
